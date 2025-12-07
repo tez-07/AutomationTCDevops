@@ -41,3 +41,11 @@ The main goal of this project is to automate testing of a web application, ensur
 
 1. locally we can test using - mvn clean test
 2. once configured in Azure DevOps, the automation scripts run automatically after deployment to the QA environment.
+
+
+## Screenshots
+1. **Setup **
+   <img width="1444" height="1103" alt="image" src="https://github.com/user-attachments/assets/c23f23dd-d9f1-46fc-9aca-71ab8e93a453" />
+
+2. **Report**
+   <img width="1444" height="680" alt="image" src="https://github.com/user-attachments/assets/5b680910-3ecc-4908-aa87-e45c737fda47" />
