@@ -1,4 +1,4 @@
-# BrowserTest Automation Project
+# Automation Java-Selenium for Azure Devops Project
 
 This project demonstrates a **Selenium-based automated testing framework** for a web application deployed in a QA environment. It integrates with Java, JUnit, and ChromeDriver using WebDriverManager, with robust handling for environments that take time to load.
 
