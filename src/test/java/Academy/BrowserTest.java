@@ -10,7 +10,7 @@ public class BrowserTest {
 
     @Test
     public void getData() throws InterruptedException {
-        WebDriverManager.chromedriver().setup(); // automatically downloads correct driver
+        WebDriverManager.chromedriver().setup(); 
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
@@ -24,7 +24,7 @@ public class BrowserTest {
                 driver.get("https://tborgohainqa01.azurewebsites.net/webapp/");
                 String text = driver.findElement(By.cssSelector("h1")).getText();
                 
-                if(text.equals("-- Azure DevOps with Automation --")) {
+                if(text.equals("Azure DevOps with Automation")) {
                     ready = true;
                     System.out.println("QA Environment ready!");
                     break;
@@ -44,7 +44,7 @@ public class BrowserTest {
 
         // actual test
         String finalText = driver.findElement(By.cssSelector("h1")).getText();
-        Assert.assertEquals("-- Azure DevOps with Automation --", finalText);
+        Assert.assertEquals("Azure DevOps with Automation", finalText);
 
         driver.quit();
     }
